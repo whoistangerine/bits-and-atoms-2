@@ -25,38 +25,41 @@
 
 
 .card {
-  background-color: bisque;
+  background-color: #F8F7F2;
   color: black;
   border-radius: 5px;
-  padding: 0.5em;
-  box-shadow: 50px 50px 50px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  box-shadow: 50px 50px 60px 0px rgba(0, 0, 0, 0.25);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.5em;
-  /*grid-template-rows: repeat(20/ 1fr);*/
   grid-template-rows: 30px 200px repeat(3 , 1fr);
 }
 
 .heading{
   grid-column: 1/3;
-  /*display: block;*/
-  font-size: 20px;
+  margin-top: 4px;
+  font-family: 'Limelight', cursive;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
 }
 
 .main-image {
-  
   grid-column: 1/3;
   grid-row: 2;
   width: 100%;
-  /*margin: 20px auto 0;*/
   display: inline-block;
 }
 
+.description {
+  background-color: #FFB4ED;
+  border-radius: 5px;
+}
+
 .temperature {
-  background-color: yellow;
+  background-color: #F0F424;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -64,7 +67,8 @@
 }
 
 .rainfall {
-  background-color: darkblue;
+  background-color: #002E50;
+  color: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -72,15 +76,8 @@
 }
 
 .wind {
-  background-color: darkgreen;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.uv-index {
-  background-color: rebeccapurple;
+  background-color: #4A5328;
+  color: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -88,21 +85,41 @@
 }
 
 .sunlight {
-  background-color: orangered;
+  background-color: #FC5101;
+  color: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.description {
-  background-color: pink;
+.uv-index {
+  background-color: #7100E2;
+  color: white;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .name {
   margin-top: 4px;
-  margin-left: 6px;
+  margin-left: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.name-special {
+  margin-top: 14px;
+  margin-left: 10px;
+  font-family: 'Limelight', cursive;
+  font-size: 25px;
+}
+
+.number {
+  margin: 4px;
+  margin-top: 10px;
+  font-family: 'Limelight', cursive;
+  font-size: 28px;
 }
 
 .name-wrapper {
@@ -114,4 +131,7 @@
  height: 100%;
 }
 
-
+/* Sources: 
+CSS Grid Layout Crash Course: https://youtu.be/jV8B24rSN5o 
+W3 School: https://www.w3schools.com/css/
+CSS Tricks */
